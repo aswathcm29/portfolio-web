@@ -16,7 +16,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .teams, .contact, .navbar{
     font-family: 'Poppins', sans-serif;
 }
  .about-content,
@@ -36,7 +36,7 @@ section{
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
+    
 }
 
 .navbar{
@@ -44,7 +44,6 @@ section{
     width: 100%;
     z-index: 999;
     padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
 
@@ -73,9 +72,12 @@ section{
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
+    padding:8px 10px;
+    border-radius: 30px;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    transition: 1s ease;
+    background-color: crimson;
 }
 .menu-btn{
     color: #fff;
@@ -166,7 +168,7 @@ section{
     position: relative;
     left:20rem;
 }
-.home-content > a{
+.home-content>a,.socials > a{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -178,7 +180,7 @@ section{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
- .home-content > a:hover{
+ .home-content > a:hover,.socials > a:hover{
     color: crimson;
     background: none;
 }
@@ -236,7 +238,9 @@ section{
     margin: 10px 0 7px 0;
 }
 
-
+.skills{
+    height: 100vh;
+}
  .column{
     width: 50%;
     padding: 40px;
@@ -246,6 +250,8 @@ section{
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+
 .left p{
     text-align: justify;
 }
@@ -310,9 +316,39 @@ section{
 .about-content,
 .serv-content,
 .skills-content,
-.contact-content{
+.contact{
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
+}
+
+.contact {
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #111;
+}
+
+.socials a {
+    display: inline-block; 
+    margin: 0 10px; 
+}
+
+.socials img {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease; 
+}
+
+.socials img:hover {
+    transform: scale(1.2); 
+}
+
+.contact p{
+    color:white;
+    font-size: 3rem;
+    margin-bottom: 5rem;
 }
